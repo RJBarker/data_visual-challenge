@@ -1,86 +1,92 @@
-# Data_Visual-Challenge
+# Data_Visual-Challenge   
 
-## Pymaceuticals Inc.
+## Pymaceuticals Inc.   
 
-### Description  
+### Description    
 
-Using the data files "Mouse_metadata.csv" and "Study_results.csv", merge together into one DataFrame and display summary statistics and bar, pie, box and scatter plots using the Matplotlib libary.
+Using the data files "Mouse_metadata.csv" and "Study_results.csv", merge together into one DataFrame and display summary statistics and bar, pie, box and scatter plots using the Matplotlib libary.   
 
-This assignment was broken down into sections, with tasks assined to be completed:
+This assignment was broken down into sections, with tasks assined to be completed:  
 
-### Preparing the Data  
+### Preparing the Data    
 
-Using the data sets provided:
+Using the data sets provided:  
 
-  - Import the data
-  - Merge into a single DataFrame
-  - Display the original unique Mouse ID count
-  - Remove any Mouse ID's with duplicate Timepoint entry's into a new "clean" DataFrame
-  - Re-display unique Mouse ID count with duplicates removed
+  - Import the data  
+  - Merge into a single DataFrame  
+  - Display the original unique Mouse ID count  
+  - Remove any Mouse ID's with duplicate Timepoint entry's into a new "clean" DataFrame  
+  - Re-display unique Mouse ID count with duplicates removed  
 
-### Generate Summary Statistics
+### Generate Summary Statistics  
 
-Create a Summary Statistics DataFrame which:
+Create a Summary Statistics DataFrame which:  
 
-  - Contains each Drug Regimen as the index and on a seperate row
-  - Contains five statistics generated on each Drug Regimen's Tumor Volume
-     - Mean
-     - Median
-     - Variance
-     - Standard Dev.
-     - Standard Err. Mean
+  - Contains each Drug Regimen as the index and on a seperate row  
+  - Contains five statistics generated on each Drug Regimen's Tumor Volume  
+     - Mean  
+     - Median  
+     - Variance  
+     - Standard Dev.  
+     - Standard Err. Mean  
 
-### Create Bar Charts and Pie Charts
+### Create Bar Charts and Pie Charts  
 
-Create two identical Bar Charts which show:
+Create two identical Bar Charts which show:  
 
-  - The total number of rows for Mouse ID/Timepoint by Drug Regimen
-      - First Bar Chart must be created through Pandas DataFrame
-      - Second Bar Chart must be created by Matplotlib's pyplot
+  - The total number of rows for Mouse ID/Timepoint by Drug Regimen  
+      - First Bar Chart must be created through Pandas DataFrame  
+      - Second Bar Chart must be created by Matplotlib's pyplot  
 
-Create two identical Pie Charts which show:
+Create two identical Pie Charts which show:  
 
-  - The distribution of female vs male mice
-      - First Pie Chart must be created through Pandas DataFrame
-      - Second Pie Chart must be created by Matplotlib's pyplot
+  - The distribution of female vs male mice  
+      - First Pie Chart must be created through Pandas DataFrame  
+      - Second Pie Chart must be created by Matplotlib's pyplot  
 
-### Calculate Quartiles, Find Outliers, and Create a Box Plot
+### Calculate Quartiles, Find Outliers, and Create a Box Plot  
 
-On the 4 most effective Drug Regimens: Capomulin, Ramicane, Infubinol, and Ceftamin:
+On the 4 most effective Drug Regimens: Capomulin, Ramicane, Infubinol, and Ceftamin:  
 
-  - Create a grouped DataFrame that shows the last (greatest) time point for each mouse
-  - Merge this grouped DataFrame with the original cleaned DataFrame
-  - Create a list that holds the treatment names as well as a second, empty list to hold the tumor volume data
-  - Loop through each drug in the treatment list, locating the rows in the merged DataFrame that correspond to each treatment
-  - Append the resulting final tumor volumes for each drug to the empty list
-  - Determine outliers by using the upper and lower bounds, and then print the results
-  - Using Matplotlib
-     - Generate a box plot that shows the distribution of the final tumor volume for all the mice in each treatment group
-     - Highlight any potential outliers in the plot by changing their color and style
+  - Create a grouped DataFrame that shows the last (greatest) time point for each mouse  
+  - Merge this grouped DataFrame with the original cleaned DataFrame  
+  - Create a list that holds the treatment names as well as a second, empty list to hold the tumor volume data  
+  - Loop through each drug in the treatment list, locating the rows in the merged DataFrame that correspond to each treatment  
+  - Append the resulting final tumor volumes for each drug to the empty list  
+  - Determine outliers by using the upper and lower bounds, and then print the results  
+  - Using Matplotlib 
+     - Generate a box plot that shows the distribution of the final tumor volume for all the mice in each treatment group  
+     - Highlight any potential outliers in the plot by changing their color and style  
 
-### Create a Line Plot and a Scatter Plot
+### Create a Line Plot and a Scatter Plot   
 
-Select a single mouse that was treated with Capomulin:
+Select a single mouse that was treated with Capomulin:   
   
-  - Generate a line plot of tumor volume versus time point for that mouse
+  - Generate a line plot of tumor volume versus time point for that mouse  
 
-Using only the data on mice treated with the Capomulin regimen:
+Using only the data on mice treated with the Capomulin regimen:  
 
-  - Generate a scatter plot of mouse weight versus average observed tumor volume
+  - Generate a scatter plot of mouse weight versus average observed tumor volume  
 
-### Calculate Correlation and Regression
+### Calculate Correlation and Regression  
 
-With the data used to create the previous scatter plot:
+With the data used to create the previous scatter plot:  
 
-  - Calculate the correlation coefficient and linear regression model between mouse weight and average observed tumor volume
-  - Plot the linear regression model on top of the previous scatter plot
+  - Calculate the correlation coefficient and linear regression model between mouse weight and average observed tumor volume  
+  - Plot the linear regression model on top of the previous scatter plot  
 
 ### Analysis
 
 Finally, provide a top-level summary of the study results
 
 
-## References
+## References   
+
+- Pandas Documentation on Duplicates - https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.duplicated.html#pandas.DataFrame.duplicated   
+- Pandas Documentation on Aggregating DataFrames - https://pandas.pydata.org/docs/reference/api/pandas.core.groupby.DataFrameGroupBy.agg.html   
+- Matplotlib Documentation on BoxPlot Aesthetics - https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html   
+- Pearson'r' and Linregress code/formula - Module 5.3: Introduction to Statistics - Various Activities   
+- Data Generated by - Mockaroo LLC (2022)  
 
 
 
